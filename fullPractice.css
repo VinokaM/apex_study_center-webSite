@@ -1,0 +1,642 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 8rem;
+}
+::-webkit-scrollbar{
+    height: 10px;
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(19, 189, 33);
+    border-radius: 5rem;
+}
+body{
+    background-color: rgb(34, 34, 34);
+    position: relative;
+}
+.sideView{
+    padding-top: 20px;
+    position: fixed;
+    display: none;
+    justify-content:center;
+    align-items: flex-start;
+    width: 150px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: rgb(51, 51, 51);
+}
+.side{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.head1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.logo1{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-left: 10px;
+}
+.home1{
+    color: white;
+    margin: 15px;
+    display: block;
+}
+.home1:hover{
+    color: rgb(19, 189, 33);
+    transition: 0.5s;
+    margin-left: 10px;
+}
+.hicon{
+    color: white;
+    font-size: 16px;
+    display: none;
+}
+.closeicon{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+.hhicon{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: white;
+}
+
+
+.header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 50px;
+    background-color: rgb(51, 51, 51);
+    z-index: 999;
+}
+.flex{
+    display:flex;
+    height: 100%;
+    margin-top: 20px;
+    justify-content: center;
+    align-content: center;
+}
+.head{
+    margin-left: 200px;
+}
+.logo{
+    margin-right: 200px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+.home{
+    color: white;
+    margin-right: 20px;
+}
+.home:hover{
+    color: rgb(19, 189, 33);
+    transition: 0.5s;
+}
+
+
+.menu{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-auto-rows: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.h1{
+    color: white;
+    font-size: 80px;
+    text-align: center;
+}
+#gr{
+    color: rgb(19, 189, 33);
+}
+.imagea{
+    width: 300px;
+    height: auto;
+}
+.name{
+    width: 300px;
+    height: 300px;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.but{
+    background-color:rgb(51, 51, 51);
+    width: 90px;
+    height: 30px;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.but:hover{
+    background-color: white;
+    color: rgb(51, 51, 51);
+    transition: 0.5s;
+}
+
+
+
+.cout{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    display: flex;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(51, 51, 51);
+    border-radius: 15px;
+    padding: 10px;
+    margin: 15px;
+}
+.box:hover{
+    background-color: rgb(19, 189, 33);
+    transition: 0.5s;
+}
+
+.icon{
+    width: 60px;
+    height: auto;
+    margin-right: 30px;
+}
+.wicon{
+    color: white;
+    font-size: 32px;
+}
+
+.about{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 100px;
+}
+.txt{
+    width: 45%;
+    margin-left: 50px;
+}
+.aboutHead{
+    color:rgb(19, 189, 33);
+    margin-bottom: 15px;
+}
+.para{
+    font-size: 20px;
+    color: white;
+}
+
+/*comenr*/
+.teacher{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ourcourse{
+    width: 65%;
+    height: auto;
+    display: flex;
+    flex-direction: raw;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(51, 51, 51);
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+.swiper-wrapper{
+    margin: 20px;
+}
+.swiper-slide {
+    width:5rem;
+    text-align: center;
+    font-size: 16px;
+    padding: 20px;
+    background-color: rgb(51, 51, 51);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    border-radius: 15px;
+  }
+  .courseImage{
+    width: 100px;
+    height: auto;
+    margin: 20px;
+
+  }
+  .couresName{
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .description{
+    color: white;
+    font-size: 14px;
+  }
+  .hteach{
+    font-size: 40px;
+    color: white;
+  }
+  .hil{
+    color: rgb(19, 189, 33);
+  }
+  .swiper-pagination-bullet{
+    background-color: rgb(51, 51, 51);
+  }
+  .swiper-pagination-bullet-active{
+    background-color: rgb(19, 189, 33);
+  }
+  .more{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .pmore{
+    display: block;
+    color: black;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 12px;
+    background-color: white;
+    width: 70px;
+  }
+  .pmore:hover{
+    background-color: rgb(34, 34, 34);
+    color: white;
+    transition: 0.5s;
+  }
+  
+
+
+
+.sectionTeacher{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ourTeachers{
+    margin-top: 70px;
+}
+.course{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.acourse{
+    margin: 20px;
+    padding: 10px;
+    position: relative ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.link{
+    position: absolute;
+    top: 20px;
+    left: -6rem;
+}
+.cimage{
+    border-radius: 10px;
+}
+.sname{
+    padding: 5px;
+    margin: 5px;
+    background-color: white;
+    border-radius: 5px;
+    color: rgb(19, 189, 33);
+    text-decoration: initial;
+}
+.sname:hover{
+    background-color: rgb(51, 51, 51);
+}
+.acourse:hover .link{
+    left: 1rem;
+    transition: 0.5s;
+}
+.tname{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ttsubject{
+    color: rgb(19, 189, 33);
+}
+.ttname{
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+
+/*contact us*/
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid rgb(51, 51, 51);
+}
+.ourContact{
+    margin: 50px;
+}
+.ccc{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.contactImage{
+   margin-right: 200px;
+}
+.cform{
+    text-align: start;
+    border: 1px solid rgb(51, 51, 51);
+    padding: 15px;
+    border-radius: 10px;
+}
+.lebal{
+    display: block;
+    color: white;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+.box1{
+    background-color: rgb(51, 51, 51);
+    color: white;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 250px;
+    border: 0px;
+}
+.ratio{
+    color: white;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.sbtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+}
+.btn{
+    background-color: rgb(51, 51, 51);
+    color: white;
+    padding: 5px;
+    border: 0px;
+    margin: 20px;
+    border-radius: 10px;
+}
+.btn:hover{
+    background-color: rgb(19, 189, 33);
+    color: black;
+}
+.fott{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(51, 51, 51);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-top: 50px;
+}
+.imageFotter{
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 3px;
+    margin-right: 3px;
+    width: 50px;
+    border-radius: 50%;
+    height: auto;
+    background-color: rgb(34, 34, 34);
+}
+.imageFotter:hover{
+    background-color: rgb(19, 189, 33);
+    transition: 0.5s;
+}
+.my{
+    margin-top: 70px;
+}
+.myTest{
+    padding-top: 5px;
+    border-top: 1px solid rgb(34, 34, 34);
+    color: white;
+}
+.mynew{
+    color: rgb(19, 189, 33);
+}
+
+
+
+
+@media(max-width:800px){
+    .head{
+        display: none;
+    }
+    .hicon{
+        display: flex;
+    }
+    .header{
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .logo{
+        margin-right: 150px;
+    }
+    .menu{
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .name{
+        display: flex;
+        margin-right: 0;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    #gr{
+        margin-bottom: 20px;
+    }
+    .h1{
+        font-size: 42px;
+    }
+    .image{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .imagea{
+        width: 200px;
+        height: auto;
+        margin: 0;
+    }
+    .cout{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    .aboutImage{
+        width: 100px;
+        height: auto;
+        margin: 0;
+    }
+    .txt{
+        margin: 0;
+        margin-top: 15px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+    }
+    .para{
+        text-align: center;
+        font-size: 16px;
+    }
+    .teacher{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .ourcourse{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sectionTeacher{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .course{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .ccc{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+    }
+    .contactImage{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .cimg{
+        width: 100px;
+        height: auto;
+        text-align: center;
+    }
+    .hteach{
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+    .cimage{
+        width: 200px;
+        height: auto;
+    }
+    .ourContact{
+        margin-bottom: 15px;
+    }
+    .imageFotter{
+        width: 30px;
+        height: auto;
+        padding: 5px;
+        margin: 5px;
+    }
+    .fimage{
+        margin-top: 50px;
+    }
+    .fott{
+        height: 150px;
+    }
+    .my{
+        margin-top: 20px;
+    }
+    .myTest{
+        font-size: 12px;
+    }
+}
+
+
+
+
